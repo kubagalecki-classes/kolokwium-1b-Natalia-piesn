@@ -21,7 +21,7 @@ class RapGwiazda : public Artysta
   }
 };
 
-*Artysta stworzArtyste(const string& pseud)
+Artysta* stworzArtyste(const string& pseud)
 {
   if (pseud.front() == toupper(pseud.front()))
   {
