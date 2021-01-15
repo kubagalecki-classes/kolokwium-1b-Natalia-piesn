@@ -6,4 +6,8 @@
 
 // tutaj algorytm liczPopularnych(T begin, T end)
 using namespace std;
-template <Artysta T>
+template <typename T>
+int liczPopularnych(T it_b, T it_e)
+{
+  return count_if(it_b, it_e, [](T a){return a.getSluchacze()>1000;});
+}
