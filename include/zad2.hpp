@@ -8,17 +8,25 @@
 using namespace std;
 class PopGwiazda : public Artysta
 {
-  Artysta(const string& s, const unsigned& n)
+public:
+  PopGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
   void graj(std::ostream& stream) const {
-    stream << "Popgwiazda: " << getPseudonim();
+    stream << "Popgwiazda: " << pseudonim;
   }
+private:
+  string pseudonim;
+  unsigned sluchacze;
 };
 class RapGwiazda : public Artysta
 {
-  Artysta(const string& s, const unsigned& n)
+public:
+  RapGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
   void graj(std::ostream& stream) const {
-    stream << "Rapgwiazda: " << getPseudonim();
+    stream << "Rapgwiazda: " << getPseudonim;
   }
+private:
+  string pseudonim;
+  unsigned sluchacze;
 };
 
 Artysta* stworzArtyste(const string& pseud)

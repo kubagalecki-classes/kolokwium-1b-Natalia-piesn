@@ -15,6 +15,6 @@ public:
   ArtystaPlusInstrument(const Artysta& ar, const T& ti) : a(ar), i(ti){}
   unsigned koncert()
   {
-    return i.liczbaUczestników(a.getSluchacze());
+    return i.liczbaUczestnikow(a.getSluchacze());
   }
 };
