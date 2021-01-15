@@ -4,3 +4,5 @@
 #include <vector>
 
 // tutaj funkcja stworzZespol
+using namespace std;
+vector<Artysta> stworzZespol()
