@@ -16,7 +16,7 @@ vector<Artysta> stworzZespol(int a, const string& str)
     vector<Artysta> vec;
     for (int i=0; i<a; i++)
     {
-      vec.push_back(str, i+1);
+      vec.push_back(Artysta(str, i+1));
     }
     return vec;
   }
