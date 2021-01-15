@@ -9,13 +9,10 @@ using namespace std;
 class PopGwiazda : public Artysta
 {
 public:
-  PopGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
+  Arysta(const string& s, const unsigned& n){}
   void graj(std::ostream& stream) const {
-    stream << "Popgwiazda: " << pseudonim;
+    stream << "Popgwiazda: " << getPseudonim();
   }
-private:
-  string pseudonim;
-  unsigned sluchacze;
 };
 class RapGwiazda : public Artysta
 {
