@@ -6,7 +6,7 @@
 using namespace std;
 
 template <typename T>
-class ArtystaPlusInstrument<T>
+class ArtystaPlusInstrument
 {
 private:
   Artysta a;
