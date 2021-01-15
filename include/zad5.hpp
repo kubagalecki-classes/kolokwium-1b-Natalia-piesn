@@ -9,5 +9,5 @@ using namespace std;
 template <class T>
 int liczPopularnych(T it_b, T it_e)
 {
-  return count_if(it_b, it_e, [](T a){return a.getSluchacze()>1000;});
+  return count_if(it_b, it_e, [](Artysta a){return a.getSluchacze()>1000;});
 }
