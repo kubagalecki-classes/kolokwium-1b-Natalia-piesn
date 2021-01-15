@@ -11,7 +11,7 @@ class PopGwiazda : public Artysta
 public:
   PopGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
   void graj(std::ostream& stream) const {
-    stream << "Popgwiazda: " << pseudonim;
+    stream << "Popgwiazda: " << pseudonim();
   }
 private:
   string pseudonim;
@@ -22,7 +22,7 @@ class RapGwiazda : public Artysta
 public:
   RapGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
   void graj(std::ostream& stream) const {
-    stream << "Rapgwiazda: " << getPseudonim;
+    stream << "Rapgwiazda: " << getPseudonim();
   }
 private:
   string pseudonim;
