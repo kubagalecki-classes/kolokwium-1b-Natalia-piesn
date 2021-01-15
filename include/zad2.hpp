@@ -5,7 +5,30 @@
 #include <cctype>
 
 // tutaj klasy PopGwiazda, RapGwiazda oraz funkcja stworzArtyste
+using namespace std;
 class PopGwiazda : public Artysta
 {
-
+  PopGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
+  void graj(std::ostream& stream) const {
+    stream << "Popgwiazda: " << pseudonim;
+  }
 };
+class RapGwiazda : public Artysta
+{
+  RapGwiazda(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
+  void graj(std::ostream& stream) const {
+    stream << "Rapgwiazda: " << pseudonim;
+  }
+};
+
+*Artysta stworzArtyste(const string& pseud)
+{
+  if (pseud.front() == toupper(pseud.front()))
+  {
+    return new PopGwiazda("BTS", 1234);
+  }
+  else 
+  {
+    return new RapGwiazda("Ye", 4321);
+  }
+}
