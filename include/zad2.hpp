@@ -5,3 +5,7 @@
 #include <cctype>
 
 // tutaj klasy PopGwiazda, RapGwiazda oraz funkcja stworzArtyste
+class PopGwiazda : public Artysta
+{
+
+};
