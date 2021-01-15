@@ -8,16 +8,16 @@
 using namespace std;
 class PopGwiazda : public Artysta
 {
-  Artysta(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
+  Artysta(const string& s, const unsigned& n)
   void graj(std::ostream& stream) const {
-    stream << "Popgwiazda: " << pseudonim;
+    stream << "Popgwiazda: " << getPseudonim();
   }
 };
 class RapGwiazda : public Artysta
 {
-  Artysta(const string& s, const unsigned& n) : pseudonim(s), sluchacze(n){}
+  Artysta(const string& s, const unsigned& n)
   void graj(std::ostream& stream) const {
-    stream << "Rapgwiazda: " << pseudonim;
+    stream << "Rapgwiazda: " << getPseudonim();
   }
 };
 
