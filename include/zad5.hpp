@@ -5,3 +5,5 @@
 #include <vector>
 
 // tutaj algorytm liczPopularnych(T begin, T end)
+using namespace std;
+template <typename T>
